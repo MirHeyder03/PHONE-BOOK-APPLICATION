@@ -1,7 +1,7 @@
 #include <iostream>
 #include <windows.h>
 using namespace std;
- 
+
 int menu()
 {
     cout << "\n\n\n\n\n";
@@ -22,15 +22,15 @@ int menu()
     cout << "\t\t\t\t\t--------------------------------------------\n";
     cout << "\t\t\t\t\t|          [9]    Exit                     |\n";
     cout << "\t\t\t\t\t--------------------------------------------\n";
- 
+
     int a;
     cin >> a;
     system("cls");
     return a;
 }
- 
+
 int k = 0; // counter
- 
+
 int main()
 {
     string name[100]; // 100 dene adlardan ibaret string array-i
@@ -50,7 +50,7 @@ int main()
             k++;
             total_contacts++;
         }
- 
+
         // Diplay contacts
         else if (check == 2)
         {
@@ -66,7 +66,7 @@ int main()
         else if (check == 3)
         {
             string searched_number;
-            cout << "\t\t\t\t\t enter number : ";
+            cout << "\t\t\t\t\t Enter number : ";
             cin >> searched_number;
             int check2 = 0; // flag
             for (int i = 0; i < 100; i++)
@@ -87,7 +87,7 @@ int main()
         else if (check == 4)
         {
             string searched_name;
-            cout << "\t\t\t\t\t enter name : ";
+            cout << "\t\t\t\t\t Enter name : ";
             cin >> searched_name;
             int check2 = 0;
             for (int i = 0; i < 100; i++)
@@ -108,7 +108,7 @@ int main()
         else if (check == 5)
         {
             string searched_name, new_name, new_number;
-            cout << "\t\t\t\t\t enter name : ";
+            cout << "\t\t\t\t\t Enter name : ";
             cin >> searched_name;
             int check2 = 0;
             for (int i = 0; i < 100; i++)
@@ -157,7 +157,7 @@ int main()
         // delete All
         else if (check == 7)
         {
- 
+
             cout << "\t\t\t\t\t All Deleted Successfully\n";
             for (int i = 0; i < k; i++)
             {
@@ -172,9 +172,8 @@ int main()
         {
             cout << "\t\t\t\t\tTotal Number of contact list are : " << total_contacts << endl;
         }
- 
+
         check = menu();
- 
+
     } while (check != 9);
 }
- 
