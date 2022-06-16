@@ -6,4 +6,5 @@
 [5]  Update              
 [6]  delete              
 [7]  Delete All          
-[8]  Number of contacts  
+[8]  Number of contacts 
+[9]  Exit 
