@@ -1,6 +1,4 @@
 # PHONE-BOOK-APPLICATION
- PHONE BOOK APPLICATION
--------------------------                      
 [1]  Add Contacts        
 [2]  Diplay All Contacts 
 [3]  Search by Number    
